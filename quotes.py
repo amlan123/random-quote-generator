@@ -1,14 +1,20 @@
 import random
 
 quotes = [
-    "The only way to do great work is to love what you do. - Steve Jobs",
-    "Be yourself; everyone else is already taken. - Oscar Wilde",
-    "In the middle of difficulty lies opportunity. - Albert Einstein",
-    "Stay hungry, stay foolish. - Steve Jobs",
-    "The unexamined life is not worth living. - Socrates",
-    "Why do we fall? So we can learn to pick ourselves up. - Batman"
-    "Our life is a reflection of our actions. - Amlan"
+    {"text": "The only way to do great work is to love what you do.", "author": "Steve Jobs"},
+    {"text": "Be yourself; everyone else is already taken.", "author": "Oscar Wilde"},
+    {"text": "In the middle of difficulty lies opportunity.", "author": "Albert Einstein"},
+    {"text": "Stay hungry, stay foolish.", "author": "Steve Jobs"},
+    {"text": "The unexamined life is not worth living.", "author": "Socrates"},
+    {"text": "Why do we fall? So we can learn to pick ourselves up.", "author": "Batman"},
 ]
 
 random_quote = random.choice(quotes)
-print(random_quote)
+print(f'"{random_quote["text"]}"')
+print(f'  — {random_quote["author"]}')
+```
+
+Run it again. Now your output should look like:
+```
+"Stay hungry, stay foolish."
+  — Steve Jobs
